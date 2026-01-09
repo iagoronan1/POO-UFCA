@@ -1,0 +1,16 @@
+class Reserva:
+    def __init__(self, hospede, quarto, entrada, saida, qtd):
+        self.hospede = hospede
+        self.quarto = quarto
+        self.entrada = entrada
+        self.saida = saida
+        self.qtd = qtd
+        self.status = "CONFIRMADA"
+
+    def __str__(self):
+        return (
+            f"Reserva | Hóspede: {self.hospede.nome} | "
+            f"Quarto: {self.quarto.numero} | "
+            f"Entrada: {self.entrada} | Saída: {self.saida} | "
+            f"Hóspedes: {self.qtd} | Status: {self.status}"
+        )

@@ -1,0 +1,10 @@
+class Quarto:
+    def __init__(self, numero, tipo, capacidade, tarifa):
+        self.numero = numero
+        self.tipo = tipo
+        self.capacidade = capacidade
+        self.tarifa = tarifa
+        self.status = "DISPONIVEL"
+
+    def __str__(self):
+        return f"Quarto {self.numero} | Tipo: {self.tipo} | Capacidade: {self.capacidade} | Tarifa: {self.tarifa} | Status: {self.status}"
